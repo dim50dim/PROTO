@@ -4,8 +4,8 @@ class Student  {
         this.firstName = a;
         this.secondName = b;
         this.dayOfBirth = c;
-        this.arr = [];
-        this.arr2 = [];
+        this.arr = d;
+        this.arr2 = e;
     }
     present(){
         this.arr.push(true);
