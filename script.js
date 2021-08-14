@@ -12,7 +12,7 @@ class Student  {
      
     }
     absent(){
-        this.arr.push(false);
+        ( this.arr.length <= 10) ? this.arr.push(false) : false;
     }
     mark(num){
         if( this.num >= 0  && this.num <=10) { 
@@ -31,6 +31,10 @@ student.present();
 student.present();
 student.present();
 student.present();
+student.absent();
+student.absent();
+student.absent();
+student.absent();
 student.absent();
 student.absent();
 student.absent();
