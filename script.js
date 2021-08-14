@@ -9,15 +9,17 @@ class Student  {
     }
     present(){
         ( this.arr.length <= 10) ? this.arr.push(true) : false;
-     
+            
     }
     absent(){
         ( this.arr.length <= 10) ? this.arr.push(false) : false;
+
     }
     mark(num){
-        if( this.num >= 0  && this.num <=10) { 
-            this.arr2.push(num);
-        }
+      //  if( this.num > 0  || this.num <=10) { 
+         return    this.arr2.push(num);
+    //    }
+      
     }
 }
 
@@ -40,6 +42,8 @@ student.absent();
 student.absent();
 student.absent();
 student.mark(8);
+student.mark(8);
+student.mark(82);
 
 let student2 = new Student('Mike','Smith','29.22.1233',[],[]);
 console.log(student2);
