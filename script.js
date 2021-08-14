@@ -8,13 +8,14 @@ class Student  {
         this.arr2 = e;
     }
     present(){
-        this.arr.push(true);
+        ( this.arr.length <= 10) ? this.arr.push(true) : false;
+     
     }
     absent(){
         this.arr.push(false);
     }
     mark(num){
-        if(this.arr2.length >= 0 && this.arr2.length <= 10 || this.num >= 0  && this.num <=10) { 
+        if( this.num >= 0  && this.num <=10) { 
             this.arr2.push(num);
         }
     }
@@ -25,6 +26,9 @@ class Student  {
 let student = new Student('Alex','Ivanov','11.22.1233',[],[]);
 console.log(student);
 
+
+student.present();
+student.present();
 student.present();
 student.present();
 student.absent();
