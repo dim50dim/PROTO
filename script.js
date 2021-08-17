@@ -61,7 +61,9 @@ student2.absent();
 
 student2.absent();
 student2.mark(7);
-
+student2.mark(7);
+student2.mark(6);
+student.summary();
 let student3 = new Student('John','Black','22.44.2354',[],[]);
 console.log(student3);
 
@@ -71,3 +73,6 @@ student3.absent();
 
 student3.absent();
 student3.mark(5);
+student3.mark(6);
+student3.mark(9);
+student.summary();
