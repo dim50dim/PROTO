@@ -17,9 +17,15 @@ class Student  {
     }
     mark(num){
       //  if( this.num > 0  || this.num <=10) { 
-         return    this.arr2.push(num);
+             this.arr2.push(num);
     //    }
       
+    }
+    summary(){
+        if(this.mark / this.mark.length > 9 && this.present / this.absent > 0.9)return 'Ути какой молодчинка!';
+        if(this.mark / this.mark.length < 9 || this.present / this.absent < 0.9)return 'Норм, но можно лучше';
+        if(this.mark / this.mark.length < 9 && this.present / this.absent < 0.9)return 'Man you are doing shit';
+        
     }
 }
 
@@ -43,7 +49,8 @@ student.absent();
 student.absent();
 student.mark(8);
 student.mark(8);
-student.mark(82);
+student.mark(8);
+student.summary();
 
 let student2 = new Student('Mike','Smith','29.22.1233',[],[]);
 console.log(student2);
